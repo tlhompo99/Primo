@@ -49,10 +49,13 @@
       margin-bottom: 20px;
     }
     .logo-img {
-      max-width: 220px;
+      max-width: 260px;
       height: auto;
       display: inline-block;
       transition: transform 0.2s ease;
+      border-radius: 16px;
+      object-fit: contain;
+      background: #f5f5f5;
     }
     .logo-img:hover {
       transform: scale(1.02);
@@ -427,13 +430,9 @@
 
 <header class="site-header" id="header">
   <div class="container">
-    <!-- Logo top center -->
+    <!-- Logo top center - using actual logo URL -->
     <div class="logo-wrapper">
-      <!-- REPLACE THIS WITH YOUR ACTUAL LOGO URL (transparent PNG/SVG recommended) -->
-      <img class="logo-img" src="https://placehold.co/400x100/000000/FFFFFF?text=PRIMO+LOGO" alt="PRIMO BARBER SHOP logo - replace with actual logo" 
-           style="max-width: 220px; background: #000; border-radius: 12px; padding: 8px 16px;">
-      <!-- ↑ Replace this with logo URL (e.g., your-logo.png) -->
-      <div style="font-size: 12px; color: #888; margin-top: 6px;">⚡ Replace with official logo</div>
+      <img class="logo-img" src="https://raw.githubusercontent.com/tlhompo99/Primo/refs/heads/main/WhatsApp%20Image%202026-04-16%20at%2010.18.19.jpeg" alt="PRIMO BARBER SHOP official logo">
     </div>
     <!-- Smooth scroll navigation -->
     <nav class="nav-bar">
@@ -492,26 +491,25 @@
     </div>
   </section>
 
-  <!-- GALLERY Section: 4 images with hover zoom -->
+  <!-- GALLERY Section: 4 actual gallery images -->
   <section id="gallery">
     <div class="container">
       <h2 class="section-title">Masterpiece Gallery</h2>
       <div class="gallery-grid">
-        <!-- REPLACE EACH GALLERY IMAGE URL WITH ACTUAL BARBER WORK PHOTOS -->
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=500&h=400&fit=crop" alt="Fresh fade haircut - replace with actual work">
+          <img src="https://raw.githubusercontent.com/tlhompo99/Primo/refs/heads/main/WhatsApp%20Image%202026-04-16%20at%2010.18.20%20(1).jpeg" alt="Barber work - fade style">
         </div>
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1503951914875-3c0c5e9f8f7a?w=500&h=400&fit=crop" alt="Beard grooming - replace with actual work">
+          <img src="https://raw.githubusercontent.com/tlhompo99/Primo/refs/heads/main/WhatsApp%20Image%202026-04-16%20at%2010.18.20%20(2).jpeg" alt="Precision haircut">
         </div>
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=500&h=400&fit=crop" alt="Modern taper haircut - replace with actual work">
+          <img src="https://raw.githubusercontent.com/tlhompo99/Primo/refs/heads/main/WhatsApp%20Image%202026-04-16%20at%2010.18.20%20(3).jpeg" alt="Beard trim masterpiece">
         </div>
         <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=500&h=400&fit=crop" alt="Luxury barber service - replace with actual work">
+          <img src="https://raw.githubusercontent.com/tlhompo99/Primo/refs/heads/main/WhatsApp%20Image%202026-04-16%20at%2010.18.20.jpeg" alt="Modern taper cut">
         </div>
       </div>
-      <p class="text-center mt-2" style="font-size: 0.8rem; color: #6c6c6c;">⬆️ Replace placeholder images with your own portfolio shots ⬆️</p>
+      <p class="text-center mt-2" style="font-size: 0.8rem; color: #6c6c6c;">✨ Authentic cuts from Primo barbers ✨</p>
     </div>
   </section>
 
@@ -616,7 +614,7 @@
       }
     });
 
-    // Smooth scroll with offset for fixed header (80px approx)
+    // Smooth scroll with offset for fixed header (approx 80px)
     const navLinks = document.querySelectorAll('.nav-bar a');
     navLinks.forEach(link => {
       link.addEventListener('click', function(e) {
@@ -636,7 +634,7 @@
       });
     });
 
-    // Additional fallback: ensure home section click works perfectly
+    // Ensure home section click works perfectly
     const homeLink = document.querySelector('a[href="#home"]');
     if(homeLink) {
       homeLink.addEventListener('click', function(e) {
@@ -646,11 +644,5 @@
     }
   })();
 </script>
-
-<!-- Image comments reminder (visible in console for dev) -->
-<!-- === IMAGE INSTRUCTIONS === 
-     LOGO: Replace src of .logo-img with your actual logo URL (best white/black version).
-     GALLERY: Four .gallery-item images -> replace each 'src' with high-quality barber portfolio images.
-     All placeholders have descriptive comments. -->
 </body>
 </html>
